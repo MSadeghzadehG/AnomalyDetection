@@ -1,5 +1,8 @@
 # -AnomalyDetection
+in the early of this project, I’ve used a few statistical method that are using for unsupervised learning such as K-NN and DBSCAN. but These method results were not reliable and I’ve been looking for better and faster result. Then I’ve tried a special type of Random Forest method that named Isolation Forest. But this method only works on numerical(in a better word ordinal) data but the most feature of my dataset were categorical. Now I’m evaluating autoencoder(normal, variational and disentangled). also I’m trying to define my own loss function, and I hope a significant improvement on the result.
+
 ...
+
 ## autoencoder
 when I was searching about methods used in unsupervised learning, I've seen many methods that categorized unsupervised, just because they assume a very very basic hypothesis. maybe these hypotheses are acceptable in most fields and projects, but I couldn't accept them easily in the network connections data. (giving some example)
 However, the autoencoders learning have no hypothesis. in a better word, the hypothesis is the architecture of our neural network. so I was encouraged to use autoencoders for this project. the anomaly detection using autoencoder can be defined like this: we learn our model using whole data, then again show each of the data to the model. the idea is that the loss of reconstruction shows how much a data is further from the others. so we can sort the reconstruction losses and consider data in the top of the list as anomalies. (use a figure)

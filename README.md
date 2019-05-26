@@ -1,4 +1,5 @@
-# -AnomalyDetection
+# AnomalyDetection
+
 in the early of this project, I’ve used a few statistical method that are using for unsupervised learning such as K-NN and DBSCAN. but These method results were not reliable and I’ve been looking for better and faster result. Then I’ve tried a special type of Random Forest method that named Isolation Forest. But this method only works on numerical(in a better word ordinal) data but the most feature of my dataset were categorical. Now I’m evaluating autoencoder(normal, variational and disentangled). also I’m trying to define my own loss function, and I hope a significant improvement on the result.
 
 ...
@@ -19,3 +20,6 @@ but the problem is that: the learning process just certify that the all points i
 so I couldn't use variational autoencoder directly, but I found a newer type of them,which named disentengled variational autoencoder. (show a Counterexample)
 
 ## disentangled variational autoencoder
+a video of Yoshua Bengio about disentangled learning: (That Was Great!)
+https://www.youtube.com/watch?v=Yr1mOzC93xs
+changed my definition of a good intelligent agent: a good agent should learn a representation and an 'abstraction' of its field(for example network connections) and could 'explain' these learned things.
